@@ -1,0 +1,38 @@
+# E-flite Convergence Tricopter Y-Configuration Mixer
+
+# Motors
+R: 3y 10000 10000 10000 0
+
+Z:
+
+Tilt mechanism servo mixer
+#add fw_control1_[1] pitch  (by rain)
+---------------------------
+#RIGHT up:2000 down:1000
+#ch5 rear tilt servo(S 1 4) & elevon mixers(s 1 1)
+M: 2
+O:      10000  10000      0 -10000  10000
+S: 1 4      0 -20000  10000 -10000  10000
+S: 1 1   8000  -8000      0 -10000  10000  
+
+#LEFT up:1000 down:2000
+#ch6 front tilt servo
+M: 2
+O:      10000  10000      0 -10000  10000
+S: 1 4      0  20000  -7900 -10000  10000
+S: 1 1      0      0      0 -10000  10000
+
+
+Aileron mixers
+-------------
+#ch7 aileron left
+M: 2
+O:      10000  10000      0 -10000  10000
+S: 1 2  -7500  -7500      0 -10000  10000
+S: 1 0   8000   8000      0 -10000  10000
+
+#ch8 aileron right
+M: 2
+O:      10000  10000      0 -10000  10000
+S: 1 2  -7500  -7500      0 -10000  10000
+S: 1 0  -8000  -8000      0 -10000  10000
